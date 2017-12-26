@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/sign_up.css"/>
+    <link rel="stylesheet" type="text/css" href="css/base/reset.css"/>
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href=" css/normalize.css" />
+    <link rel="stylesheet" href=" css/styles.min.css" />
+    <link href=" img/common/favicon.png" rel="shortcut icon" />
+
+    <link href="css/jplist.min.css" rel="stylesheet" type="text/css" />
+    <!--js-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.hiSlider.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.hiSlider.min.css">
+    <link rel="stylesheet" href="iconfont/日历/demo.css">
+    <link rel="stylesheet" href="iconfont/日历/iconfont.css">
+    <link rel="stylesheet" href="iconfont/坐标/demo.css">
+    <link rel="stylesheet" href="iconfont/坐标/iconfont.css">
+    <link rel="stylesheet" href="iconfont/喜欢/demo.css">
+    <link rel="stylesheet" href="iconfont/喜欢/iconfont.css">
+
+    <script src="js/modernizr.min.js"></script>
+
+    <script src="js/jplist.min.js"></script>
+
+    <script>
+        $('document').ready(function(){
+            $('#demo').jplist({
+
+                //main options
+                itemsBox: '.list'
+                ,itemPath: '.list-item'
+                ,panelPath: '.jplist-panel'
+
+                //save plugin state
+                ,storage: 'localstorage' //'', 'cookies', 'localstorage'
+                ,storageName: 'views'
+            });
+        });
+    </script>
+</head>
+<body  style="font-family: Microsoft YaHei">
+    <div class="g-top">
+        <div class="g-topin f-ma">
+            <div class="g-left f-fl">
+                <a href="/index"><img src="img/logo.png" alt=""/></a>
+            </div>
+            <div class="g-mid f-fl">
+                <ul>
+                    <li><a href="/index">首页</a></li>
+                    <li><a href="/course/explore">课程</a></li>
+                    <li><a href="/school">学校</a></li>
+                    <li><a href="/article">资讯</a></li>
+                </ul>
+            </div>
+            <div class="g-mid f-fr" style="width: 140px;">
+                <ul>
+                    <li><a href="/login?redirectURL=http%3A%2F%2Fwww.hzlll.cn%2Findex">登入</a></li>
+                    <li><a href="/register/register?redirectURL=http%3A%2F%2Fwww.hzlll.cn%2Findex">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="g-server">
+    <div class="g-serverin f-ma">
+        <div class="g-left f-fl">
+            <img src="img/net_bg.png" alt=""/>
+        </div>
+        <div class="f-cb"></div>
+        <div class="g-right f-fl">
+            <ul>
+                <li><a href="/school/2526">拱墅区</a></li>
+                <li><a href="/school/2523">上城区</a></li>
+                <li><a href="/school/2524">下城区</a></li>
+                <li><a href="/school/2529">江干区</a></li>
+                <li><a href="/school/2525">西湖区</a></li>
+                <li><a href="/school/2527">滨江区</a></li>
+                <li><a href="/school/2535">萧山区</a></li>
+                <li><a href="/school/2536">余杭区</a></li>
+                <li><a href="/school/2530">富阳区</a></li>
+                <li><a href="/school/2533">临安市</a></li>
+                <li><a href="/school/2531">建德市</a></li>
+                <li><a href="/school/2534">桐庐县</a></li>
+                <li><a href="/school/2528">淳安县</a></li>
+                <li><a href="/school/2532">经开区</a></li>
+                <li><a href="/school/2539">名胜区</a></li>
+                <li><a href="/school/2540">大江东</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="g-carousel f-ma">
+    <article class="jq22-container">
+
+        <div id="wrap" style="width: 100%;">
+            <ul class="hiSlider hiSlider1 f-ma">
+                <li  class="hiSlider-item"><img src="img/lb1.jpg" alt="11111"></li>
+                <li  class="hiSlider-item"><img src="img/lb2.jpg" alt="22222"></li>
+                <li  class="hiSlider-item"><img src="img/lb3.jpg" alt="33333"></li>
+                <li  class="hiSlider-item"><img src="img/lb4.jpg" alt="44444"></li>
+            </ul>
+        </div>
+    </article>
+</div>
+
+    <div class="g-course-list">
+        <div id="main-content" class="box">
+            <div class="center">
+                <div id="page-content" class="box">
+
+                    <!-- demo -->
+                    <div id="demo" class="box jplist">
+
+                        <!-- ios button: show/hide panel -->
+                        <div class="jplist-ios-button">
+                            <i class="fa fa-sort"></i>
+                            jPList Actions
+                        </div>
+
+                        <!-- panel -->
+                        <div class="jplist-panel box panel-top">
+
+                            <!-- reset button -->
+                            <button
+                                type="button"
+                                class="jplist-reset-btn"
+                                data-control-type="reset"
+                                data-control-name="reset"
+                                data-control-action="reset">
+                                重置 &nbsp;<i class="fa fa-share"></i>
+                            </button>
+
+                            <div
+                                class="jplist-drop-down"
+                                data-control-type="drop-down"
+                                data-control-name="paging"
+                                data-control-action="paging">
+                                <ul>
+                                    <li><span data-number="5"> 一页5个 </span></li>
+                                    <li><span data-number="10" data-default="true"> 一页10个 </span></li>
+                                    <li><span data-number="15"> 一页15个 </span></li>
+                                    <li><span data-number="all"> 查看全部 </span></li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="jplist-drop-down"
+                                data-control-type="drop-down"
+                                data-control-name="sort"
+                                data-control-action="sort">
+                                <ul>
+                                    <li><span data-path="default">排序</span></li>
+                                    <li><span data-path=".like" data-order="asc" data-type="number" data-default="true">按喜欢升序</span></li>
+                                    <li><span data-path=".like" data-order="desc" data-type="number">按喜欢降序</span></li>
+                                    <li><span data-path=".date" data-order="asc" data-type="datetime">按日期升序</span></li>
+                                    <li><span data-path=".date" data-order="desc" data-type="datetime">按日期降序</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- filter by title -->
+                            <div class="text-filter-box">
+
+                                <i class="fa fa-search  jplist-icon"></i>
+
+                                <!--[if lt IE 10]>
+                                <div class="jplist-label">Filter by Title:</div>
+                                <![endif]-->
+
+                                <input
+                                    data-path=".title"
+                                    type="text"
+                                    value=""
+                                    placeholder="Filter by Title"
+                                    data-control-type="textbox"
+                                    data-control-name="title-filter"
+                                    data-control-action="filter"
+                                    />
+                            </div>
+
+                            <!-- filter by description -->
+                            <div class="text-filter-box">
+
+                                <i class="fa fa-search  jplist-icon"></i>
+
+                                <!--[if lt IE 10]>
+                                <div class="jplist-label">Filter by Description:</div>
+                                <![endif]-->
+
+                                <input
+                                    data-path=".desc"
+                                    type="text"
+                                    value=""
+                                    placeholder="Filter by Description"
+                                    data-control-type="textbox"
+                                    data-control-name="desc-filter"
+                                    data-control-action="filter"
+                                    />
+                            </div>
+
+                            <!-- views -->
+                            <div
+                                class="jplist-views"
+                                data-control-type="views"
+                                data-control-name="views"
+                                data-control-action="views"
+                                data-default="jplist-grid-view">
+
+                                <button type="button" class="jplist-view jplist-list-view" data-type="jplist-list-view"></button>
+                                <button type="button" class="jplist-view jplist-grid-view" data-type="jplist-grid-view"></button>
+                                <button type="button" class="jplist-view jplist-thumbs-view" data-type="jplist-thumbs-view"></button>
+                            </div>
+
+                            <!-- pagination results -->
+                            <div
+                                class="jplist-label"
+                                data-type="Page {current} of {pages}"
+                                data-control-type="pagination-info"
+                                data-control-name="paging"
+                                data-control-action="paging">
+                            </div>
+
+                            <!-- pagination -->
+                            <div
+                                class="jplist-pagination"
+                                data-control-type="pagination"
+                                data-control-name="paging"
+                                data-control-action="paging">
+                            </div>
+
+                        </div>
+
+
+                        <!-- data -->
+                        <div class="list box text-shadow">
+
+                            <!-- item 1 -->
+
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/nvzi.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                  <p class="date"> <i class="iconfont">&#xe626;</i>          2016.9.30-2017.6.1</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">女子防身术</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">以提高身体素质为重点，减缓现代人因工作压力带来的各种亚健康状态，达到运动修身，保健养生的目的.</p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>55</p>
+
+                                </div>
+                            </div>
+
+                            <!-- item 2 -->
+
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/学历提升.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.9.30-2016.11.9</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">面授辅导</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;text-overflow:ellipsis;">一、层次及专业 1、本科专业 （业余时间学习，最低毕业年限2.5年） 土木工程（建筑工程方向）、机械设计制造及其自动化、计算机科学与技术、工商管理、会计学、行政管理、社会工作、物流管理、金融学、法学、学前教育、公共事业管理（教育管理）、小学教育、汉语言文学（师范方向）等。 2、专科专业 （业余时间学习，最低毕业年限2.5年） 室内设计、汽车(汽车维修方向) 、建筑施工与管理、工程造价管理、机械制造与自动化、计算机信息管理、计算机网络技术、电子商务、广告（设计与制作）、行政管理、会计学、工商管理（工商企业管理方向、市场营销方向）、国际经济与贸易、物流管理、金融、人力资源管理、社会工作、英语、旅游、法学、学前教育、小学教育等。 二、有关事项 1、入学形式：考生须参加省电大统一组织的入学水平测试，择优录取。2、报名条件：（户籍、专业、年龄均不限）(1)本科：具有国民教育系列专科以上学历； (2)专科：具有高中（含中专、职高、技校）以上学历。 3、报名材料：⑴身份证正反复印件2份；⑵毕业证书原件（报读专升本须持大专以上毕业证书原件）及其复印件2份；⑶2寸蓝底免冠照片2张；⑷注册费200元,预交代管费600元。 4、学费标准：按照浙江省物价局和浙江省财政厅（浙价费［2014］186号）文件要求，实行学分收费（110元／学分）。专科最低毕业总学分为76学分,本科最低毕业总学分为71学分（补修课程除外）。5、证书和学位: 学籍自注册入学起八年内有效。根据教育部有关要求，二年制专科、专科起点本科专业最短学习年限为两年半。符合毕业要求的，准予毕业，并颁发国家开放大学毕业证书（部分本科专业由国家开放大学与普通高校联合颁发证书）。本科（专科起点）学生符合条件的可按规定申请合作高校学位。
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>44</p>
+                                </div>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/杭科.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.9.30-2016.12.15</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">学历技能</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">一、项目介绍本项目旨在培养适应社会经济发展需要的高素质技能型人才，学生以技能培训生身份脱产学习三年。学校将按照职业技能的培养要求组织教学，学生参加职业资格证书考试合格后，颁发国家或行业认可的职业资格证书。参加技能培训期间，学生可根据个人职业生涯发展的需要，自愿选择参加我校成人类大专学历层次课程的学习。学生参加教育主管部门认可的入学考试，被录取后可取得成人大专学籍，符合毕业条件颁发国家教育部电子注册的成人高等教育大专毕业证书。学校与浙江科技学院、中国人民大学、浙江工业大学等知名院校开展专升本合作，向学有余力的同学提供专升本通道。二、招生</p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>33</p>
+                                </div>
+                            </div>
+
+                            <!-- item 4 -->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/跆拳道.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.9.30-2017.1.6</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">青少年跆拳道</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">青少年跆拳道主要培养学生的跆拳道专场，在加强身体训练、提高健康素质的基础上，树立体育精神，培养意志、磨练心智，确保学生的成长成才
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>88</p>
+
+                                </div>
+                            </div>
+
+                            <!-- item 5 -->
+
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/浙大.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.9.30-2016.12.1</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">轻松学习</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">浙江大学是教育部批准开展现代远程教育的第一批试点高校之一，也是卫生部确定的全国远程医学教育首批示范试点单位。目前，已设专业涉及文、经、管、医、法、工、农等学科。办学以来，浙江大学远程教育秉承“求是、创新”的校训，坚持以质量为本，以规范求发展，在社会上赢得了良好的声誉。现继续招收2016年秋季专、本科学生。学校自行组织入学考试，择优录取。学生修满教学计划规定的学分，考试成绩合格，并通过教育部规定的全国试点学校网络教育公共课统考，可获得国家教育部统一电子注册的毕业文凭，符合学位条例规定条件者，将授予浙江大学成人高等教育学士学位。报名地址咨询电话： ①杭州毛家桥路26号  “杭州电大开放教育、成人教育招生报名大厅” 联系电话：28288020   88935100   28288109     13957112328 ②杭州狮虎桥路2号（延安路银泰斜对面原杭州成人科技大学） 联系电话：85160730   28288210    13357191630 ③萧山区沈家里路216号杭州电大继续教育湘湖分院（萧山人才市场对面） 联系电话：82665719     82886532
+                                        .</p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>25</p>
+
+                                </div>
+                            </div>
+                            <!-- item 6 -->
+
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/少儿书法.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.10.1-2017.9.30</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title" >青少年书画</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">杭州社区大学（杭州电大）青少年书画艺术教育秋季班启动 9月12日至9月23日上午8:30至下午4:30，现场接受咨询、报名、面试及缴费。 地址:西湖区毛家桥路26号杭州社区大学（杭州电大）食堂四楼 联系：金老师 13606503446；项老师 15958116532；王老师 15957186668
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>23</p>
+
+                                </div>
+                            </div>
+                            <!-- item 7 -->
+
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/人大.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.9.30-2016.12.1</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">985名牌高校</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">中国人大杭州学习中心（杭州广播电视大学）简介：杭州广播电视大学创建于1978年11月，是一所培养各类应用型人才和提供多层次、多规格、多形式的高等教育、继续教育和各类培训的公办现代化开放大学。学校现在是“中国人民大学网络教育杭州学习中心”、“浙江大学远程教育杭州学习中心”、“杭州远程教育中心”、“杭州终身教育基地”、“中央广播电视大学继续教育基地”、“杭州社区大学、“杭州市民大学”，多向办学，和谐发展。校本级现有翠苑、延安路、严州、富阳高桥四个校区，教职员工405人，其中拥有高、中级职称以上教师为75%，各级各类在校学历教育生22000多人。层次：高中起点专科 / 专科起点本科。专业：市场营销（互联网营销方向）、工商管理（物流管理方向）、金融学（保险学方向）、会计学、财务管理（限本科）、金融学、市场营销、工商管理、国际经济与贸易、财政学、公共事业管理、汉语言文学、法学、传播学（限本科）、社会工作、人力资源管理、计算机应用技术、计算机科学与技术等。学分*学费*证书： 专科、专升本总学分80学分。110元/学分，教材费450(预交)。颁发中国人民大学毕业证书（网络教育），国家承认学历，教育部统一电子注册。最短毕业时间：专科和专升本2.5年。课程学习由学生根据教学计划和自身情况决定。预约考试*多次考试机会：每年举行三次课程考试。学生可根据自身学习情况，预约参加任何一次考试。学习形式：网上业余学习为主，学生可通过网络视频直接接受中国人民大学老师的面授教学，享受全国一流高校师资优势。报名材料：蓝底2寸照片2张，毕业证书、身份证原件及复印件各2份，报名费100元。报名地址：①杭州毛家桥路26号“杭州电大招生报名大厅”联系电话：88935100 28288109 28288020 13957112328②萧山区沈家里路216号杭州电大继续教育湘湖分院（萧山人才市场对面） 联系电话：82665719 82886532
+                                        .</p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>37</p>
+
+                                </div>
+                            </div>
+                            <!-- item 8 -->
+
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/nvzi.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.10.1-2017.9.30</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">青少年书画</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">杭州社区大学（杭州电大）青少年书画艺术教育秋季班启动 9月12日至9月23日上午8:30至下午4:30，现场接受咨询、报名、面试及缴费。 地址:西湖区毛家桥路26号杭州社区大学（杭州电大）食堂四楼 联系：金老师 13606503446；项老师 15958116532；王老师 15957186668
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>89</p>
+
+                                </div>
+                            </div>
+
+
+                            <!-- item 9-->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/nvzi.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.10.1-2017.9.30</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">青少年书画</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">杭州社区大学（杭州电大）青少年书画艺术教育秋季班启动 9月12日至9月23日上午8:30至下午4:30，现场接受咨询、报名、面试及缴费。 地址:西湖区毛家桥路26号杭州社区大学（杭州电大）食堂四楼 联系：金老师 13606503446；项老师 15958116532；王老师 15957186668
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>28</p>
+
+                                </div>
+                            </div>
+
+                            <!-- item 10-->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/未标题-5.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.10.1-2017.9.30</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">退役士兵职业技能</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">自2010年起，杭州市城镇自谋职业退役士兵及农村退役士兵退出现役一年内，可以免费参加由政府组织的职业技能教育培训，杭州科技职业技术学院是杭州市退役士兵教育培训工作承训机构，也退役士兵教育培训办学规模最大的承训机构，教育工作经验丰富、办学成果丰硕。学校当前主要采取“技能+就业”和“技能+学历+就业”两种教育培训模式，主要开设汽车类、管理类、电商类、策划类、建筑类、装饰类六大类职业培训项目，配套杭州科技职业技术学院成教专科学历教育文凭。
+
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>825</p>
+
+                                </div>
+                            </div>
+                            <!-- item 11-->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/财务会计.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.11.26-2017.5.4</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">财务会计实战</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">主要针对广大财务会计从业人员，以及有意愿从事财务会计行业的人员，开展实战训练，再短期内迅速提高学生的财务会计的实际工作能力，能够全面、深刻的掌握和了解财务会计工作的要点、难点和重点，培训突出实操能力训练，确保学员能够顺利适应行业要求，高质量完成工作。
+
+
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>45</p>
+
+                                </div>
+                            </div>
+                            <!-- item 12-->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/少儿树苗.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.12.2-2017.1.5</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">少儿素描培训</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">少儿素描培训以专业特长教学为特色，内容包括素描基本技法、色彩、静物写生教学，主要培养学生的艺术专长，以各类考级、特长生水平测试内容为培训重点，在提高学生艺术修养的同时，确保学生的专业化水平。
+
+
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>23</p>
+
+                                </div>
+                            </div>
+                            <!-- item 13-->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/少儿国画.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.12.3-2017.4.13</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">少儿国画培训</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">少儿国画培训以专业特长教学为特色，内容包括国画基本技法，主要培养学生的艺术专长，以各类考级、特长生水平测试内容为培训重点，在提高学生艺术修养的同时，确保学生的专业化水平。
+
+
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>23</p>
+
+                                </div>
+                            </div>
+                            <!-- item 14-->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/普通话培训.jpg" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.12.10-2017.3.3</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">普通话培训</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">学校是杭州市语言文字培训中心，并作为杭州市普通话水平测试基地，面向全市提供普通话培训及考证工作。学校拥有多名国家、省、市普通话测试员，具备一支高水平的普通话培训师资团队，能够有效帮助学员提高应试水平
+
+
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>66</p>
+
+                                </div>
+                            </div>
+                            <!-- item 15-->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/中考美术辅导.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.12.31-2017.3.4</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">中考美术</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">青少年中考美术辅导以专业特长教学为特色，内容针对艺术类高中入学考试辅导，主要培养学生的艺术专长，内容以素描、写生、色彩为主，在提高学生艺术修养的同时，确保学生的专业化水平。 培训对象：初中一年级以
+
+
+
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>25</p>
+
+                                </div>
+                            </div>
+
+                            <!-- item 16-->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/国学美术.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2017.1.1-2017.3.3</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">儿童国学美术</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">儿童国学美术以国学教学为基础，结合儿童简笔画教学，培养学生的艺术思维，画出故事，寓教于乐。
+
+
+
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>33</p>
+
+                                </div>
+                            </div>
+
+                            <!-- item 17-->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/少儿书法.png" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2017.1.7-2017.3.3</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">少儿书法培训</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">少儿书法培训以专业特长教学为特色，内容包括软硬笔书法教学，主要培养学生的艺术专长，以各类考级、特长生水平测试内容为培训重点，在提高学生艺术修养的同时，确保学生的专业化水平。
+
+
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>99</p>
+
+                                </div>
+                            </div>
+
+                            <!-- item 18-->
+                            <div class="list-item box" style="width: 30%; margin: 20px 10px;">
+                                <!-- img -->
+                                <div class="img left">
+                                    <img src="img/儿童国学书画.jpg" alt="" title=""/>
+                                </div>
+
+                                <!-- data -->
+                                <div class="block right">
+                                    <p class="date"> <i class="iconfont">&#xe626;</i>          2016.12.10-2017.3.3</p>
+                                    <a href="activity.html?nvzi" target="_blank"><p class="title">儿童国学书画</p></a>
+                                    <p class="desc" style="height: 275px; overflow: hidden;">儿童国学书画以国学教学为基础，结合儿童简笔画和汉字书写教学，培养学生的艺术思维，画出故事，掌握国学精髓，做好书画言志，寓教于乐。
+
+
+
+                                    </p>
+                                    <p class="like"><i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号</p>
+                                    <p class="like clike"><i class="iconfont">&#xe62c;</i>166</p>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+
+                        <div class="box jplist-no-results text-shadow align-center">
+                            <p>No results found</p>
+                        </div>
+
+                        <!-- ios button: show/hide panel -->
+                        <div class="jplist-ios-button">
+                            <i class="fa fa-sort"></i>
+                            jPList Actions
+                        </div>
+
+                        <!-- panel -->
+                        <div class="jplist-panel box panel-bottom">
+
+                            <div
+                                class="jplist-drop-down"
+                                data-control-type="drop-down"
+                                data-control-name="paging"
+                                data-control-action="paging"
+                                data-control-animate-to-top="true">
+                                <ul>
+                                    <li><span data-number="5"> 一页5个 </span></li>
+                                    <li><span data-number="10" data-default="true"> 一页10个 </span></li>
+                                    <li><span data-number="15"> 一页15个 </span></li>
+                                    <li><span data-number="all"> 查看全部 </span></li>
+                                </ul>
+                            </div>
+                            <div
+                                class="jplist-drop-down"
+                                data-control-type="drop-down"
+                                data-control-name="sort"
+                                data-control-action="sort"
+                                data-control-animate-to-top="true">
+                                <ul>
+                                    <li><span data-path="default">排序</span></li>
+                                    <li><span data-path=".like" data-order="asc" data-type="number" data-default="true">按喜欢升序</span></li>
+                                    <li><span data-path=".like" data-order="desc" data-type="number">按喜欢降序</span></li>
+                                    <li><span data-path=".date" data-order="asc" data-type="datetime">按日期升序</span></li>
+                                    <li><span data-path=".date" data-order="desc" data-type="datetime">按日期降序</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- pagination results -->
+                            <div
+                                class="jplist-label"
+                                data-type="{start} - {end} of {all}"
+                                data-control-type="pagination-info"
+                                data-control-name="paging"
+                                data-control-action="paging">
+                            </div>
+
+                            <!-- pagination -->
+                            <div
+                                class="jplist-pagination"
+                                data-control-type="pagination"
+                                data-control-name="paging"
+                                data-control-action="paging"
+                                data-control-animate-to-top="true">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of demo -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="f-cb"></div>
+    <div class="g-footer">
+        <div class="h3">杭州社区大学 版权所有    浙ICP备09020157号-4</div>
+        <div class="h3">技术支持：0571-28288064    service@hzlll.cn
+        </div>
+        <div class="h3">本平台的学习资源（公开课/TED演讲）采用Creative Commons知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议进行许可</div>
+
+    </div>
+
+    <script>
+        $('.hiSlider1').hiSlider();
+        $('.hiSlider2').hiSlider({
+            isFlexible: true,
+            mode: 'fade',
+            isSupportTouch: false,
+            isShowTitle: false,
+            isShowPage: false,
+            titleAttr: function(curIdx){
+                return $('img', this).attr('alt');
+            }
+        });
+        $('.hiSlider3').hiSlider({
+            isFlexible: true,
+            isSupportTouch: true,
+            titleAttr: function(curIdx){
+                return $('img', this).attr('alt');
+            }
+        });
+        $('.hiSlider4').hiSlider({
+            startSlide: 2,
+            direction: 'top'
+        });
+
+        $(function(){
+            $('.list-item').click(function(){
+                window.location.href="activity.html"
+            })
+        })
+    </script>
+</body>
+</html>

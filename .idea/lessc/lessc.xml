@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LessManager">
+    <option name="lessProfileMap">
+      <map>
+        <entry key="0">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="C:\Users\Administrator\Desktop\hzlll报名静态页\css\pub" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="0" />
+              <option name="lessDirPath" value="C:\Users\Administrator\Desktop\hzlll报名静态页\less\pub" />
+              <option name="name" value="less_pub" />
+            </LessProfile>
+          </value>
+        </entry>
+        <entry key="1">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="C:\Users\Administrator\Desktop\hzlll报名静态页\css\base" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="1" />
+              <option name="lessDirPath" value="C:\Users\Administrator\Desktop\hzlll报名静态页\less\base" />
+              <option name="name" value="less_base" />
+            </LessProfile>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="C:\Users\Administrator\Desktop\hzlll报名静态页\css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="id" value="2" />
+              <option name="lessDirPath" value="C:\Users\Administrator\Desktop\hzlll报名静态页\less" />
+              <option name="name" value="lee" />
+            </LessProfile>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

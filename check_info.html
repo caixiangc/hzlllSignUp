@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/sign_up.css"/>
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href=" css/normalize.css" />
+    <link rel="stylesheet" href=" css/styles.min.css" />
+    <link href=" img/common/favicon.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/activity.css"/>
+    <link href="css/jplist.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/base/reset.css"/>
+    <link rel="stylesheet" href="iconfont/日历/demo.css">
+    <link rel="stylesheet" href="iconfont/日历/iconfont.css">
+    <link rel="stylesheet" href="iconfont/坐标/demo.css">
+    <link rel="stylesheet" href="iconfont/坐标/iconfont.css">
+    <link rel="stylesheet" href="iconfont/勾/demo.css">
+    <link rel="stylesheet" href="iconfont/勾/iconfont.css">
+    <!--js-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.hiSlider.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.hiSlider.min.css">
+    <script src="js/modernizr.min.js"></script>
+
+    <script src="js/jplist.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrapValidator.css"/>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrapValidator.js"></script>
+
+    <script>
+        $('document').ready(function(){
+            $('#demo').jplist({
+
+                //main options
+                itemsBox: '.list'
+                ,itemPath: '.list-item'
+                ,panelPath: '.jplist-panel'
+
+                //save plugin state
+                ,storage: 'localstorage' //'', 'cookies', 'localstorage'
+                ,storageName: 'views'
+            });
+        });
+    </script>
+    <style>
+    </style>
+</head>
+<body  style="font-family: Microsoft YaHei">
+<div class="g-top">
+    <div class="g-topin f-ma">
+        <div class="g-left f-fl">
+            <a href="/index"><img src="img/logo.png" alt=""/></a>
+        </div>
+        <div class="g-mid f-fl">
+            <ul>
+                <li><a href="/index">首页</a></li>
+                <li><a href="/course/explore">课程</a></li>
+                <li><a href="/school">学校</a></li>
+                <li><a href="/article">资讯</a></li>
+            </ul>
+        </div>
+        <div class="g-mid f-fr" style="width: 140px;">
+            <ul>
+                <li><a href="/login?redirectURL=http%3A%2F%2Fwww.hzlll.cn%2Findex">登入</a></li>
+                <li><a href="/register/register?redirectURL=http%3A%2F%2Fwww.hzlll.cn%2Findex">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="g-server">
+    <div class="g-serverin f-ma">
+        <div class="g-left f-fl">
+            <img src="img/net_bg.png" alt=""/>
+        </div>
+        <div class="f-cb"></div>
+        <div class="g-right f-fl">
+            <ul>
+                <li><a href="/school/2526">拱墅区</a></li>
+                <li><a href="/school/2523">上城区</a></li>
+                <li><a href="/school/2524">下城区</a></li>
+                <li><a href="/school/2529">江干区</a></li>
+                <li><a href="/school/2525">西湖区</a></li>
+                <li><a href="/school/2527">滨江区</a></li>
+                <li><a href="/school/2535">萧山区</a></li>
+                <li><a href="/school/2536">余杭区</a></li>
+                <li><a href="/school/2530">富阳区</a></li>
+                <li><a href="/school/2533">临安市</a></li>
+                <li><a href="/school/2531">建德市</a></li>
+                <li><a href="/school/2534">桐庐县</a></li>
+                <li><a href="/school/2528">淳安县</a></li>
+                <li><a href="/school/2532">经开区</a></li>
+                <li><a href="/school/2539">名胜区</a></li>
+                <li><a href="/school/2540">大江东</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="f-cb"></div>
+<div class="check_contain f-ma">
+    <div class="check_contain_in">
+        <!--<div class="right">
+            <h3>参加活动：女子防身术</h3>
+            <br/>
+            <h3>时间：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="iconfont" style="font-size: 24px;">&#xe626;</i>2016.12.10-2017.3.3</h3>
+            <br/>
+            <h3 style="width: 450px;">地点：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="iconfont" style="font-size: 24px;">&#xe614;</i>杭州市西湖区毛家桥26号</h3>
+            <br/>
+        </div>
+<div class="left">
+    <h3>你的名字：蔡翔</h3>
+    <br/>
+    <h3>联系方式：13333333333</h3>
+    <br/>
+    <h3>性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;男</h3>
+    <br/>
+    <h3>邮箱地址：939387484@qq.com</h3>
+    <br/>
+    <h3>生日：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;199604303115</h3>
+    <br/>
+    <h3>上传证件1：<img src="img/155.jpg" alt="" style="width: 250px;height: 187px;"/></h3>
+    <h3>上传证件2：<img src="img/155.jpg" alt="" style="width: 250px;height: 187px;"/></h3>
+    <h3>上传证件3：<img src="img/155.jpg" alt="" style="width: 250px;height: 187px;"/></h3>
+</div>-->
+        <table class="table table-hover table-bordered table-striped" style="width: 400px;height: 200px; border-radius: 10px; float: left">
+            <caption style="width: 100%; border: none;background: cadetblue; color: whitesmoke; text-align: center">个人信息</caption>
+
+            <tbody class="table-bordered">
+            <tr>
+                <td>姓名：	</td>
+                <td>	张山</td>
+            </tr>
+            <tr>
+                <td>性别：	</td>
+                <td>	男</td>
+            </tr>
+            <tr>
+                <td>身份证：	</td>
+                <td>	330112198805050022</td>
+            </tr>
+            <tr>
+                <td>电话：	</td>
+                <td>	939387484</td>
+            </tr>
+            <tr>
+                <td>电子邮件：</td>
+                <td>	933933333@qq.com</td>
+            </tr>
+            <tr>
+                <td>单位名称：	</td>
+                <td>	浙江省建设厅</td>
+            </tr>
+            <tr>
+                <td>单位电话：</td>
+                <td>	0571-99887766</td>
+            </tr>
+            <tr>
+                <td>项目：</td>
+                <td>一级建造师考前辅导</td>
+            </tr>
+            <tr>
+                <td>是否面授：</td>
+                <td>是</td>
+            </tr>
+            <tr>
+                <td>身份证：</td>
+                <td><img src="img/155.jpg" alt="" style="width: 250px;height: 187px;"/></td>
+            </tr>
+            <tr>
+                <td>学历证书：</td>
+                <td><img src="img/155.jpg" alt="" style="width: 250px;height: 187px;"/></td>
+            </tr>
+            <tr>
+                <td>执业证书：</td>
+                <td><img src="img/155.jpg" alt="" style="width: 250px;height: 187px;"/></td>
+            </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table  table-bordered " style="width: 400px;height: 190px; border-radius: 10px; float: left; margin-left: 200px;">
+            <caption style="width: 100%; border: none;background: cadetblue; color: whitesmoke; text-align: center">活动信息</caption>
+
+            <tbody class="table-bordered">
+            <tr>
+                <td>活动名称：	</td>
+                <td>	建筑培训</td>
+            </tr>
+            <tr>
+                <td>活动日期：	</td>
+                <td>	20161001-20161007</td>
+            </tr>
+            <tr>
+                <td>活动地点：	</td>
+                <td>	杭州市西湖区毛家桥路26号杭州社区大学</td>
+            </tr>
+            <tr>
+                <td>活动费用：	</td>
+                <td>	免费</td>
+            </tr>
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+    <div class="btn f-ma">报名</div>
+    <div class="message_show" style="display: none">
+            <lable style=" font-size: 18px; text-shadow: 1px 1px 5px #ccc;">活动微信群</lable>
+            <lable style=" font-size: 18px; text-shadow: 1px 1px 5px #ccc; margin-left: 90px;">报名成功</lable>
+
+        <br/>
+        <br/>
+        <div class="f-cb"></div>
+        <div class="img" style="width: 150px;border-right: 2px solid #E2E2E2; float: left">
+            <img src="img/ER.png" alt="" style="display: block;width: 128px;height: 131px; float: left;" />
+        </div>
+        <i class="iconfont" style="display: block; float: left; margin-left: 20px;">&#xe76e;</i>
+        <div class="f-cb"></div>
+        <a href="sign_up.html" class="return_list">返回活动列表</a>
+    </div>
+</div>
+<div class="f-cb"></div>
+
+<div class="g-footer">
+    <div class="h3" style="font-size: 14px; margin-top: 3px;">杭州社区大学 版权所有    浙ICP备09020157号-4</div>
+    <div class="h3" style="font-size: 14px;margin-top: 3px;">技术支持：0571-28288064    service@hzlll.cn
+    </div>
+    <div class="h3" style="font-size: 14px;margin-top: 3px;">本平台的学习资源（公开课/TED演讲）采用Creative Commons知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议进行许可</div>
+
+</div>
+
+<script type="text/javascript">
+
+    $(".btn").click(function(){
+        $(".message_show").fadeIn();
+    })
+
+    $(document).ready(function() {
+        $('#defaultForm').bootstrapValidator({
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                'user.username': {
+                    message: 'The username is not valid',
+                    validators: {
+                        notEmpty: {
+                            message: '用户名不能为空'
+                        },
+                        stringLength: {
+                            min: 1,
+                            max: 30,
+                            message: 'The username must be more than 6 and less than 30 characters long'
+                        },
+                        different: {
+                            field: 'user[password]',
+                            message: 'The username and password cannot be the same as each other'
+                        }
+                    }
+                },
+                'user.email': {
+                    validators: {
+                        emailAddress: {
+                            message: '邮箱不能为空'
+                        }
+                    }
+                },
+                'user[password]': {
+                    // It still work even if you use the selector option
+                    //selector: '#password',
+                    validators: {
+                        notEmpty: {
+                            message: '密码不能为空'
+                        },
+                        different: {
+                            field: 'user.username',
+                            message: 'The password cannot be the same as username'
+                        }
+                    }
+                },
+                birthday: {
+                    validators: {
+                        date: {
+                            format: 'YYYY/MM/DD',
+                            message: '生日填写格式有误'
+                        }
+                    }
+                },
+                gender: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The gender is required'
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

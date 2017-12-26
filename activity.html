@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/sign_up.css"/>
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href=" css/normalize.css" />
+    <link rel="stylesheet" href=" css/styles.min.css" />
+    <link href=" img/common/favicon.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/activity.css"/>
+    <link href="css/jplist.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/base/reset.css"/>
+
+    <!--iconfont-->
+    <link rel="stylesheet" href="iconfont/日历/demo.css">
+    <link rel="stylesheet" href="iconfont/日历/iconfont.css">
+    <link rel="stylesheet" href="iconfont/坐标/demo.css">
+    <link rel="stylesheet" href="iconfont/坐标/iconfont.css">
+    <link rel="stylesheet" href="iconfont/关闭/demo.css">
+    <link rel="stylesheet" href="iconfont/关闭/iconfont.css">
+    <!--js-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.hiSlider.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.hiSlider.min.css">
+    <script src="js/modernizr.min.js"></script>
+
+    <script src="js/jplist.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrapValidator.css"/>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrapValidator.js"></script>
+
+    <!--上传插件-->
+    <!-- 引用控制层插件样式 -->
+    <link rel="stylesheet" href="css/zyUpload.css" type="text/css">
+    <!-- 引用核心层插件 -->
+    <script src="js/zyFile.js"></script>
+    <!-- 引用控制层插件 -->
+    <script src="js/zyUpload.js"></script>
+    <!-- 引用初始化JS -->
+    <script src="js/jq22.js"></script>
+    <script>
+        $('document').ready(function(){
+            $('#demo').jplist({
+
+                //main options
+                itemsBox: '.list'
+                ,itemPath: '.list-item'
+                ,panelPath: '.jplist-panel'
+
+                //save plugin state
+                ,storage: 'localstorage' //'', 'cookies', 'localstorage'
+                ,storageName: 'views'
+            });
+        });
+    </script>
+</head>
+<body  style="font-family: Microsoft YaHei">
+<div class="g-top">
+    <div class="g-topin f-ma">
+        <div class="g-left f-fl">
+            <a href="/index"><img src="img/logo.png" alt=""/></a>
+        </div>
+        <div class="g-mid f-fl">
+            <ul>
+                <li><a href="/index">首页</a></li>
+                <li><a href="/course/explore">课程</a></li>
+                <li><a href="/school">学校</a></li>
+                <li><a href="/article">资讯</a></li>
+            </ul>
+        </div>
+        <div class="g-mid f-fr" style="width: 140px;">
+            <ul>
+                <li><a href="/login?redirectURL=http%3A%2F%2Fwww.hzlll.cn%2Findex">登入</a></li>
+                <li><a href="/register/register?redirectURL=http%3A%2F%2Fwww.hzlll.cn%2Findex">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="g-server">
+    <div class="g-serverin f-ma">
+        <div class="g-left f-fl">
+            <img src="img/net_bg.png" alt=""/>
+        </div>
+        <div class="f-cb"></div>
+        <div class="g-right f-fl">
+            <ul>
+                <li><a href="/school/2526">拱墅区</a></li>
+                <li><a href="/school/2523">上城区</a></li>
+                <li><a href="/school/2524">下城区</a></li>
+                <li><a href="/school/2529">江干区</a></li>
+                <li><a href="/school/2525">西湖区</a></li>
+                <li><a href="/school/2527">滨江区</a></li>
+                <li><a href="/school/2535">萧山区</a></li>
+                <li><a href="/school/2536">余杭区</a></li>
+                <li><a href="/school/2530">富阳区</a></li>
+                <li><a href="/school/2533">临安市</a></li>
+                <li><a href="/school/2531">建德市</a></li>
+                <li><a href="/school/2534">桐庐县</a></li>
+                <li><a href="/school/2528">淳安县</a></li>
+                <li><a href="/school/2532">经开区</a></li>
+                <li><a href="/school/2539">名胜区</a></li>
+                <li><a href="/school/2540">大江东</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="f-cb"></div>
+<div class="container">
+    <div class="m-contain f-ma">
+        <div class="left f-fl">
+            <img src="img/10女子防身术培训.jpg" alt=""/>
+        </div>
+        <div class="right f-fr">
+            <h1  id="nv" style="margin-left: 20px;font-size: 26px; color: #080808">活动名：女子防身术活动简介</h1>
+            <div class="rili" style="color: black;margin: 30px 20px;">
+                <i class="iconfont">&#xe626;</i>          2016.9.30-2017.6.1
+            </div>
+            <div class="rili" style="color: black;margin: 30px 20px;">
+                <i class="iconfont">&#xe614;</i>          杭州市西湖区毛家桥26号
+            </div>
+            <div class="rili" style="color: black;margin: 30px 20px;">
+                主办方：    杭州广播电视大学
+            </div>
+            <div class="rili" style="color: black;margin: 30px 20px;">
+                联系电话：   5071-28288041
+            </div>
+            <div class="rili" style="color: black;margin: 30px 20px;">
+                参与价格：   <span>免费</span>
+            </div>
+            <div class="rili" style="color: black;margin: 30px 42px;">
+                <div class="lables">养生保健</div>
+                <div class= "labless">体育锻炼</div>
+            </div>
+            <div class="f-cb"></div>
+            <h5  style="margin: 30px 30px;">活动介绍：
+                女子防身术大全：女子会武术，流氓也挡不住。呼吁女同学学几招防身 术护身，不幸遇到歹徒时也不至于任人宰割。但要提醒一句：使用女子防身术一 定要快、狠、准，尽量一招成功，迅速脱身。虽然不希望大家有机会用上这防身术，但总归是有备无患啦。
+            </h5>
+
+
+
+
+
+        </div>
+    </div>
+    <div class="f-cb"></div>
+
+    <div class="join-in f-ma">立即参加</div>
+    <div class="f-cb"></div>
+    <div class="bootstrap_form f-ma" style="background: #FFF;">
+        <div class="container f-ma" style="margin: 0 auto">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2" style="margin-left: 20px;">
+                    <div class="page-header">
+                        <h2>请填一下基本信息吧！！！！</h2>
+                    </div>
+                    <div class="close" style="position: absolute;top: 35px; right: 0"><i class="iconfont">&#xe6b7;</i></div>
+                    <form id="defaultForm" method="post" class="form-horizontal" action="">
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" style="text-align: center;width: 95px;">名字：</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="user.username" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" style="text-align: center;width: 95px;">邮箱地址：</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="user.email" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" style="text-align: center;width: 95px;">手机号码：</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="user[password]" id="phone" />
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" style="text-align: center;width: 95px;">性别:</label>
+                            <div class="col-lg-5" style="height: 60px;">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="gender" value="male" /> 男性
+                                    </label>
+                                </div>
+                                <div class="f-cb"></div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="gender" value="female" /> 女性
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" style="text-align: center;width: 95px;">生日：</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="birthday" /> (YYYY/MM/DD)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" style="text-align: center;width: 95px;">证件1：</label>
+                            <div id="demo" class="demo" style="margin-left: 100px;"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" style="text-align: center;width: 95px;">证件1：</label>
+                            <div id="demo1" class="demo" style="margin-left: 100px;"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" style="text-align: center;width: 95px;">证件1：</label>
+                            <div id="demo2" class="demo" style="margin-left: 100px;"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-9 col-lg-offset-3">
+                                <div type="submit" class="btn btn-primary">提交</div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="f-cb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="f-cb"></div>
+<div class="g-footer">
+    <div class="h3" style="font-size: 14px; margin-top: 0px;">杭州社区大学 版权所有    浙ICP备09020157号-4</div>
+    <div class="h3" style="font-size: 14px;margin-top: 0px;">技术支持：0571-28288064    service@hzlll.cn
+    </div>
+    <div class="h3" style="font-size: 14px;margin-top: 0px;">本平台的学习资源（公开课/TED演讲）采用Creative Commons知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议进行许可</div>
+
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $('.join-in').click(function(){
+            $('.bootstrap_form').slideDown();
+            $('.m-contain').css('display','none');
+            $('.join-in').css('display','none')
+
+        })
+
+        $(".close").click(function(){
+            $(".bootstrap_form").slideUp();
+            $('.m-contain').css('display','block');
+            $('.join-in').css('display','block')
+
+
+        })
+
+        $(function(){
+            $('.btn-primary').click(function(){
+                window.location.href="check_info.html";
+            })
+        })
+    })
+
+    $(document).ready(function() {
+        $('#defaultForm').bootstrapValidator({
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                'user.username': {
+                    message: 'The username is not valid',
+                    validators: {
+                        notEmpty: {
+                            message: '用户名不能为空'
+                        },
+                        stringLength: {
+                            min: 1,
+                            max: 30,
+                            message: 'The username must be more than 6 and less than 30 characters long'
+                        },
+                        different: {
+                            field: 'user[password]',
+                            message: 'The username and password cannot be the same as each other'
+                        }
+                    }
+                },
+                'user.email': {
+                    validators: {
+                        emailAddress: {
+                            message: '邮箱不能为空'
+                        }
+                    }
+                },
+                'user[password]': {
+                    // It still work even if you use the selector option
+                    //selector: '#password',
+                    validators: {
+                        notEmpty: {
+                            message: '密码不能为空'
+                        },
+                        different: {
+                            field: 'user.username',
+                            message: 'The password cannot be the same as username'
+                        }
+                    }
+                },
+                birthday: {
+                    validators: {
+                        date: {
+                            format: 'YYYY/MM/DD',
+                            message: '生日填写格式有误'
+                        }
+                    }
+                },
+                gender: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The gender is required'
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

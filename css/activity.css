@@ -1,0 +1,101 @@
+.container {
+  height: 650px;
+}
+.container .m-contain {
+  width: 1200px;
+  position: relative;
+  height: 650px;
+}
+.container .m-contain .left {
+  box-shadow: 1px 1px 20px #ccc;
+  width: 288px;
+  height: 512px;
+  margin: 50px 161px;
+}
+.container .m-contain .left img {
+  width: 288px;
+  height: 512px;
+}
+.container .m-contain .right {
+  width: 410px;
+  margin-top: 50px;
+  margin-right: 172px;
+  text-indent: 20px;
+}
+.container .m-contain .right .rili .lables {
+  width: 100px;
+  height: 40px;
+  background: #B67D30;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  color: #ffffff;
+}
+.container .m-contain .right .rili .labless {
+  width: 100px;
+  height: 40px;
+  background: #C93228;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  color: white;
+  margin-left: 10px;
+}
+.container .m-contain .right .rili span {
+  color: #ff0000;
+}
+.container .join-in {
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #38A099;
+  color: #38a099;
+}
+.container .join-in:hover {
+  background: #38A099;
+  color: #ffffff;
+}
+.container .bootstrap_form {
+  display: none;
+  height: 623px;
+}
+.container .bootstrap_form .close:hover {
+  animation: turn 2s infinite;
+}
+@keyframes turn {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.check_contain {
+  width: 1200px;
+  position: relative;
+}
+.check_contain .check_contain_in {
+  width: 1200px;
+  margin: 50px 60px;
+  height: 1027px;
+  text-shadow: 1px 1px 10px #ccc;
+}
+.check_contain .check_contain_in .right {
+  width: 450px;
+  height: 228px;
+  float: right;
+  margin-right: 250px;
+}
+.check_contain .check_contain_in .left {
+  width: 384px;
+  height: 1031px;
+  float: left;
+}
+.btn{width: 200px;height: 40px;text-align: center;color: lightseagreen;border: 1px solid lightseagreen!important;display: block!important; margin: 0 auto!important;}
+.btn:hover{color: white!important; background: lightseagreen!important; }
+.message_show{ width: 500px; height: 300px; background: white;position: fixed;top: 150px;left: 470px;  box-shadow: 1px 1px 20px #ccc; border: 1px solid #E0E0E0;padding: 29px 112px;
+
+}
+
+.return_list{ width: 120px; height: 34px;text-align: center; line-height: 34px; border: 1px solid lightseagreen!important; color: lightseagreen; margin-top: 22px;  margin-left: 5px; display: block; list-style: none; text-decoration: none}
+.return_list:hover{ background: lightseagreen!important; color: white; text-decoration: none}
